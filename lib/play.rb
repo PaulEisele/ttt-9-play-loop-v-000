@@ -37,9 +37,21 @@ end
 
 #play
 def play(board)
+<<<<<<< HEAD
   counter = 0
   while counter<9
     turn(board)
     counter += 1
+=======
+  turns = 3
+  counter = 0
+  while counter<10
+    display_board(board)
+    turn(board)
+    counter += 1
+    if counter >= turns
+      puts "You are only allowed #{turns} valid turns!"
+    end
+>>>>>>> 4a6ecdadd6bf1b81aa4d0ec5dbf1b1cac602fecc
   end
 end
